@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+body {
+  background-color: rgb(3, 7, 28);
+}
+
+h1 {
+  display: inline-block;
+  position: relative;
+  left: 15%;
+  font-family: Rampart One, sans-serif;
+  color: rgb(196, 167, 20);
+  text-align: center;
+  font-size: 3em;
+}
+
+#restart-button {
+  position: relative;
+  top: -0.5em;
+  left: 20%;
+  background-color: rgb(196, 167, 20);
+  border: 1px solid rgb(48,73,200);
+  color: rgb(3, 7, 28);
+  font-family: Acme, sans-serif;
+  cursor: pointer;
+}
+
+#restart-button:hover {
+  background-color: rgb(3, 7, 28);
+  color: rgb(196, 167, 20);
+}
+
+#gameboard {
+  display: grid;
+  justify-items: center;
+}
+
+#gameboard thead {
+  font-family: Acme, sans-serif;
+}
+
+#gameboard tbody {
+  cursor: pointer;
+}
+
+#gameboard td {
+  color: rgb(196, 167, 20);
+  font-family: Acme, sans-serif;
+  text-align: center;
+  background: rgb(48,73,200);
+  background: radial-gradient(ellipse, rgba(10,35,164,1) 60%, rgba(8,19,74,1) 100%);
+  width: 10em;
+  height: 5em;
+  padding: 0.5em;
+  border: 1px solid rgb(196, 167, 20);
+}
+
+#gameboard td.answered {
+  background: rgb(42, 117, 79);
+  cursor: initial;
+}
+
+#loading-spinner {
+  display: none;
+  position: relative;
+  width: 10em;
+  height: 10em;
+  left: 30%;
+  top: 10em;
+};
